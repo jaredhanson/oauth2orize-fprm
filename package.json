@@ -29,7 +29,8 @@
   },
   "devDependencies": {
     "mocha": "1.x.x",
-    "chai": "1.x.x"
+    "chai": "1.x.x",
+    "chai-connect-middleware": "0.3.x"
   },
   "engines": {
     "node": "*"
