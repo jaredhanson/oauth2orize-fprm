@@ -63,4 +63,18 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
     });
   });
   
+  describe('validation', function() {
+    it('should not throw if no redirect URI', function() {
+      expect(function() {
+        fprm.validate({ redirectURI: 'https://client.example.org/callback' });
+      }).to.not.throw();
+    });
+    
+    it('should throw if no redirect URI', function() {
+      expect(function() {
+        fprm.validate({});
+      }).to.throw(Error, 'Unable to issue redirect for OAuth 2.0 transaction');
+    });
+  });
+  
 });
