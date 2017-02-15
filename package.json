@@ -26,6 +26,7 @@
   ],
   "main": "./lib",
   "dependencies": {
+    "oauth2orize": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "1.x.x",
