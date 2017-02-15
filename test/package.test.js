@@ -2,7 +2,7 @@
 
 var chai = require('chai');
 var fprm = require('..');
-var AuthorizationError = require('oauth2orize').AuthorizationError;
+var AuthorizationError = require('../lib/errors/authorizationerror');
 
 describe('oauth2orize-fprm', function() {
   
