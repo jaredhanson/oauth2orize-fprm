@@ -1,6 +1,6 @@
 {
   "name": "oauth2orize-fprm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Form Post response mode support for OAuth2orize.",
   "keywords": [
     "oauth2",

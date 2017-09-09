@@ -2,6 +2,7 @@
 
 var chai = require('chai');
 var fprm = require('..');
+var AuthorizationError = require('../lib/errors/authorizationerror');
 
 describe('oauth2orize-fprm', function() {
   
@@ -73,7 +74,7 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
     it('should throw if no redirect URI', function() {
       expect(function() {
         fprm.validate({});
-      }).to.throw(Error, 'Unable to issue redirect for OAuth 2.0 transaction');
+      }).to.throw(AuthorizationError, 'Unable to issue redirect for OAuth 2.0 transaction');
     });
   });
   
