@@ -12,6 +12,23 @@ authorization responses from the authorization server.
 
 ## Usage
 
+#### Add Response Mode
+
+For each grant in which form post response mode is desired, add support by
+passing a `modes` option containing form post response mode.  For example,
+using the token grant:
+
+```js
+server.grant({ 
+  modes: {
+    form_post: require('oauth2orize-fprm')
+  } }, 
+  oauth2orize.grant.token(function(client, user, ares, done) {
+    // TODO: issue token
+  })
+);
+```
+
 ## Contributing
 
 #### Tests
