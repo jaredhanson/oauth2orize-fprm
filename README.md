@@ -1,5 +1,12 @@
 # oauth2orize-fprm
 
+[![Version](https://img.shields.io/npm/v/oauth2orize-fprm.svg?label=version)](https://www.npmjs.com/package/oauth2orize-fprm)
+[![Build](https://img.shields.io/travis/jaredhanson/oauth2orize-fprm.svg)](https://travis-ci.org/jaredhanson/oauth2orize-fprm)
+[![Quality](https://img.shields.io/codeclimate/github/jaredhanson/oauth2orize-fprm.svg?label=quality)](https://codeclimate.com/github/jaredhanson/oauth2orize-fprm)
+[![Coverage](https://img.shields.io/coveralls/jaredhanson/oauth2orize-fprm.svg)](https://coveralls.io/r/jaredhanson/oauth2orize-fprm)
+[![Dependencies](https://img.shields.io/david/jaredhanson/oauth2orize-fprm.svg)](https://david-dm.org/jaredhanson/oauth2orize-fprm)
+
+
 [OAuth2orize](https://github.com/jaredhanson/oauth2orize) response mode plugin
 providing support for [Form Post Response Mode](https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html).
 
