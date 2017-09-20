@@ -1,6 +1,6 @@
 {
   "name": "oauth2orize-fprm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Form Post response mode support for OAuth2orize.",
   "keywords": [
     "oauth2",
@@ -26,8 +26,7 @@
     }
   ],
   "main": "./lib",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "make-node": "0.3.x",
     "mocha": "2.x.x",
