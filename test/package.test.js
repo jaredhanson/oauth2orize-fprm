@@ -63,7 +63,47 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
 </html>');
     });
   });
-  
+
+  describe('responding to a malformed request', function() {
+    var response, err;
+
+    before(function(done) {
+      chai.connect.use(function(req, res) {
+          var params = {
+            client_id: '"></a>bxD15c32DJhz9XagFx5gniWLH02IzAKK',
+            scope: '"></a>openid email user_metadata',
+            response_mode: '"></a>form_post',
+            state: req.oauth2.req.state,
+            id_token: '"></a>eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw'
+          };
+
+          fprm(req.oauth2, res, params);
+        })
+        .req(function(req) {
+          req.oauth2 = {};
+          req.oauth2.redirectURI = 'https://client.example.org/callback?id="><a>';
+          req.oauth2.req = { state: '"></a>DcP7csa3hMlvybERqcieLHrRzKBra' };
+        })
+        .end(function(res) {
+          response = res;
+          done();
+        })
+        .dispatch();
+    });
+
+    it('should sanitize html characters within input fields', function() {
+      expect(response.body).to.equal('<html><head><title>Submit This Form</title>\
+</head><body onload="javascript:document.forms[0].submit()">\
+<form method="post" action="https://client.example.org/callback?id=&quot;&gt;&lt;a&gt;">\
+<input type="hidden" name="client_id" value="&quot;&gt;&lt;/a&gt;bxD15c32DJhz9XagFx5gniWLH02IzAKK"/>\
+<input type="hidden" name="scope" value="&quot;&gt;&lt;/a&gt;openid email user_metadata"/>\
+<input type="hidden" name="response_mode" value="&quot;&gt;&lt;/a&gt;form_post"/>\
+<input type="hidden" name="state" value="&quot;&gt;&lt;/a&gt;DcP7csa3hMlvybERqcieLHrRzKBra"/>\
+<input type="hidden" name="id_token" value="&quot;&gt;&lt;/a&gt;eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw"/>\
+</form></body></html>');
+    });
+  });
+
   describe('validation', function() {
     it('should not throw if no redirect URI', function() {
       expect(function() {
