@@ -74,7 +74,8 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
             scope: '"></a>openid email user_metadata',
             response_mode: '"></a>form_post',
             state: req.oauth2.req.state,
-            id_token: '"></a>eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw'
+            id_token: '"></a>eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw',
+            expires_in: 86400
           };
 
           fprm(req.oauth2, res, params);
@@ -100,6 +101,7 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
 <input type="hidden" name="response_mode" value="&quot;&gt;&lt;/a&gt;form_post"/>\
 <input type="hidden" name="state" value="&quot;&gt;&lt;/a&gt;DcP7csa3hMlvybERqcieLHrRzKBra"/>\
 <input type="hidden" name="id_token" value="&quot;&gt;&lt;/a&gt;eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw"/>\
+<input type="hidden" name="expires_in" value="86400"/>\
 </form></body></html>');
     });
   });
