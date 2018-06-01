@@ -34,4 +34,4 @@ Updated packages are available on `npm`. To ensure delivery of additional bug fi
 
 ### Credits
 
-- Satyam Pujari
+- [Satyam Pujari](https://twitter.com/satyampujari)
