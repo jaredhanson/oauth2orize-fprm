@@ -6,12 +6,6 @@ providing support for [Form Post Response Mode](https://openid.net/specs/oauth-v
 This response mode uses the HTTP POST method instead of a redirect URI to return
 authorization responses from the authorization server.
 
----
-
-<p align="center"><a href="//pluralsight.pxf.io/c/1312135/448522/7490">Start a 10-day free trial at Pluralsight - Over 5,000 Courses Available</a></p>
-
----
-
 Status:
 [![Version](https://img.shields.io/npm/v/oauth2orize-fprm.svg?label=version)](https://www.npmjs.com/package/oauth2orize-fprm)
 [![Build](https://img.shields.io/travis/jaredhanson/oauth2orize-fprm.svg)](https://travis-ci.org/jaredhanson/oauth2orize-fprm)
