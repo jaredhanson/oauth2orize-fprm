@@ -58,6 +58,7 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
 <form method=\"post\" action=\"https://client.example.org/callback\">\
 <input type=\"hidden\" name=\"state\" value=\"DcP7csa3hMlvybERqcieLHrRzKBra\"/>\
 <input type=\"hidden\" name=\"id_token\" value=\"eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiwiYXVkIjoiZmZzMiIsImp0aSI6ImhwQUI3RDBNbEo0c2YzVFR2cllxUkIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0OjkwMzEiLCJpYXQiOjEzNjM5MDMxMTMsImV4cCI6MTM2MzkwMzcxMywibm9uY2UiOiIyVDFBZ2FlUlRHVE1BSnllRE1OOUlKYmdpVUciLCJhY3IiOiJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZCIsImF1dGhfdGltZSI6MTM2MzkwMDg5NH0.c9emvFayy-YJnO0kxUNQqeAoYu7sjlyulRSNrru1ySZs2qwqqwwq-Qk7LFd3iGYeUWrfjZkmyXeKKs_OtZ2tI2QQqJpcfrpAuiNuEHII-_fkIufbGNT_rfHUcY3tGGKxcvZO9uvgKgX9Vs1v04UaCOUfxRjSVlumE6fWGcqXVEKhtPadj1elk3r4zkoNt9vjUQt9NGdm1OvaZ2ONprCErBbXf1eJb4NW_hnrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc0uVAwBBb772-86HpAkGWAKOK-wTC6ErRTcESRdNRe0iKb47XRXaoz5acA\"/>\
+<noscript>Your browser\'s JavaScript is disabled. Consider whitelisting this site to skip this manual step in the future.<br/><button autofocus type="submit">Continue without JavaScript</button></noscript>\
 </form>\
 </body>\
 </html>');
@@ -102,6 +103,7 @@ nrQ5IKXuNsQ1g9ccT5DMtZSwgDFwsHMDWMPFGax5Lw6ogjwJ4AQDrhzNCFc\
 <input type="hidden" name="state" value="&quot;&gt;&lt;/a&gt;DcP7csa3hMlvybERqcieLHrRzKBra"/>\
 <input type="hidden" name="id_token" value="&quot;&gt;&lt;/a&gt;eyJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJzdWIiOiJqb2huIiw"/>\
 <input type="hidden" name="expires_in" value="86400"/>\
+<noscript>Your browser\'s JavaScript is disabled. Consider whitelisting this site to skip this manual step in the future.<br/><button autofocus type="submit">Continue without JavaScript</button></noscript>\
 </form></body></html>');
     });
   });
